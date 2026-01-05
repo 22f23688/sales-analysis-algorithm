@@ -4,7 +4,7 @@ def identify_top_products(sales_data, time_period, region_filter=None):
 
 BEGIN
     SET product_sales = empty dictionary
-    SET top_n = 10
+    SET top_n = 15
     SET accuracy_threshold = 0.95
     SET filtered_data = empty list
     
