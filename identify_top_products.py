@@ -35,6 +35,10 @@ BEGIN
     
     total_count = LENGTH(sales_data)
     filtered_count = LENGTH(filtered_data)
+
+   IF filtered_count == 0 THEN
+    RETURN failure_result WITH "No data matches filter criteria"
+   END IF
     
     IF total_count > 0 THEN
         data_coverage = filtered_count / total_count
